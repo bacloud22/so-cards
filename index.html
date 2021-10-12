@@ -2,24 +2,28 @@
 <html>
 
 <head>
+    <!--Meta Tags-->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://0.peerjs.com wss://0.peerjs.com https://demo.httprelay.io; 
-            script-src 'self' 'unsafe-inline' https://unpkg.com https://ajax.googleapis.com; 
-            object-src 'self'; 
-            img-src 'self' data: https://img.icons8.com https://cdnjs.cloudflare.com; 
-            child-src 'none';">
-
+    script-src 'self' 'unsafe-inline' https://unpkg.com https://ajax.googleapis.com; 
+    object-src 'self'; 
+    img-src 'self' data: https://img.icons8.com https://cdnjs.cloudflare.com; 
+    child-src 'none';">
     <meta charset='utf-8'>
     <meta name="description" content="Share your social contacts in one card. We do not collect any data whatseoever.">
     <meta name="keywords" content="social, media, contacts, snapchat, whatsapp, twitter, facebook">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Social cards on so-c.me</title>
+
+    <!--Links-->
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script type="text/javascript" src="stretchy.min.js" async></script>
     <link rel="stylesheet" type='text/css' href="water.css">
-    <link rel="stylesheet" crossorigin="anonymous"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <title>Social cards on so-c.me</title>
+       
+    <!--JS-->
+    <script type="text/javascript" src="stretchy.min.js" async></script>
     <script type="text/javascript" src="qrcode.min.js" async></script>
     <script type="text/javascript" src="share-buttons.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,16 +38,22 @@
         <option value="fr">Français</option>
         <option value="ar">عربية</option>
     </select>
+
+    <!--HEADER-->
     <header>
         <h1 lang="en">Social cards on so-c.me</h1>
         <h1 lang="fr">Cartes des médias sociaux </h1>
         <h1 lang="ar" dir="rtl">بطاقات التواصل الاجتماعي</h1>
     </header>
 
+    <!--BODY-->
     <main>
         <details>
-            <summary><span lang="en">Some details can't hurt!</span><span lang="fr">Certains détails ne font pas de
-                    mal!</span><span lang="ar" dir="rtl">بعض التفاصيل</span></summary>
+            <summary>
+                <span lang="en">Some details can't hurt!</span>
+                <span lang="fr">Certains détails ne font pas demal!</span>
+                <span lang="ar" dir="rtl">بعض التفاصيل</span>
+            </summary>
             <table id="version-info">
                 <caption>
                     <h3 lang="en">Disclaimers</h3>
@@ -53,54 +63,80 @@
                 <tbody>
                     <tr>
                         <th scope="row"><img src="https://img.icons8.com/ios/50/000000/safe-browsing.png" /></th>
-                        <td class="disclaimers" lang="en"><small>This website do not collect "any" data whatsoever. Try
-                                going offline and it works. If you are a tech savvy check browser's developer
-                                console.</small></td>
-                        <td class="disclaimers" lang="fr"><small>Ce site Web ne collecte «aucune» donnée. Essayez de
-                                vous déconnecter et ceci fonctionne. Si vous êtes un(e) geek(ette), vérifiez la console
-                                développeur du navigateur. </small></td>
-                        <td class="disclaimers" lang="ar" dir="rtl"><small>هذا الموقع لا يجمع "أي" بيانات على الإطلاق.
-                                يمكنك قطع الاتصال بالانترنت. إذا كنت خبيرًا تقنيًا ، يمكنك التحقق من أدوات تطوير
-                                المواقع. </small></td>
+                        <td class="disclaimers" lang="en">
+                            <small>This website do not collect "any" data whatsoever. Try
+                            going offline and it works. If you are a tech savvy check browser's developer
+                            console.</small>
+                        </td>
+                        <td class="disclaimers" lang="fr">
+                            <small>Ce site Web ne collecte «aucune» donnée. Essayez de
+                            vous déconnecter et ceci fonctionne. Si vous êtes un(e) geek(ette), vérifiez la console
+                            développeur du navigateur. </small>
+                        </td>
+                        <td class="disclaimers" lang="ar" dir="rtl">
+                            <small>هذا الموقع لا يجمع "أي" بيانات على الإطلاق.
+                            يمكنك قطع الاتصال بالانترنت. إذا كنت خبيرًا تقنيًا ، يمكنك التحقق من أدوات تطوير
+                            المواقع. </small>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="https://img.icons8.com/wired/50/000000/one-free.png" /></th>
-                        <td class="disclaimers" lang="en"><small>It is completely free too. It does not show
-                                advertisements and will not do so in the future. You can still help me stay motivated by
-                                donating via Paypal.</small></td>
-                        <td class="disclaimers" lang="fr"><small>Ce site est également 100% gratuit. On n'affiche pas de
-                                publicités et ne le fera pas à l'avenir. Vous pouvez toujours m'aider à rester motivé en
-                                faisant un don Paypal. </small></td>
-                        <td class="disclaimers" lang="ar" dir="rtl"><small>إنه مجاني تمامًا أيضًا. لا تعرض أية إعلانات
-                                ولن تفعل ذلك في المستقبل. لا يزال بإمكانك مساعدتي لالبقاء متحمسًا من خلال التبرع عبر
-                                Paypal.</small></td>
+                        <th scope="row">
+                            <img src="https://img.icons8.com/wired/50/000000/one-free.png" />
+                        </th>
+                        <td class="disclaimers" lang="en">
+                            <small>It is completely free too. It does not show
+                            advertisements and will not do so in the future. You can still help me stay motivated by
+                            donating via Paypal.</small>
+                        </td>
+                        <td class="disclaimers" lang="fr">
+                            <small>Ce site est également 100% gratuit. On n'affiche pas de
+                            publicités et ne le fera pas à l'avenir. Vous pouvez toujours m'aider à rester motivé en
+                            faisant un don Paypal. </small>
+                        </td>
+                        <td class="disclaimers" lang="ar" dir="rtl">
+                            <small>إنه مجاني تمامًا أيضًا. لا تعرض أية إعلانات
+                            ولن تفعل ذلك في المستقبل. لا يزال بإمكانك مساعدتي لالبقاء متحمسًا من خلال التبرع عبر
+                            Paypal.</small>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="https://img.icons8.com/wired/50/000000/private2.png" /></th>
-                        <td class="disclaimers" lang="en"><small>It is not encrypted. If you share your QR Code then you
-                                obviously did it. It is still secure as it does not communicate with remote
-                                servers.</small></td>
-                        <td class="disclaimers" lang="fr"><small>Ce site n'est pas chiffré. Si vous partagez votre QR
-                                Code, vous l'avez simplement fait. En revanche Il est sécurisé car il ne communique pas
-                                avec des serveurs distants.</small></td>
-                        <td class="disclaimers" lang="ar" dir="rtl"><small>هذا الموقع غير مشفر. إذا تبادلت "رمز
-                                الاستجابة السريعة" الخاص بك ، فمن الواضح أنك قمت بذلك. مع ذلك يبقى الموقع آمنًا لأنه لا
-                                يتصل بالانترنت.</small></td>
-
+                        <td class="disclaimers" lang="en">
+                            <small>It is not encrypted. If you share your QR Code then you
+                            obviously did it. It is still secure as it does not communicate with remote
+                            servers.</small>
+                        </td>
+                        <td class="disclaimers" lang="fr">
+                            <small>Ce site n'est pas chiffré. Si vous partagez votre QR
+                            Code, vous l'avez simplement fait. En revanche Il est sécurisé car il ne communique pas
+                            avec des serveurs distants.</small>
+                        </td>
+                        <td class="disclaimers" lang="ar" dir="rtl">
+                            <small>هذا الموقع غير مشفر. إذا تبادلت "رمز
+                            الاستجابة السريعة" الخاص بك ، فمن الواضح أنك قمت بذلك. مع ذلك يبقى الموقع آمنًا لأنه لا
+                            يتصل بالانترنت.</small>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row"><img src="https://img.icons8.com/wired/50/000000/girl-running.png" /></th>
-                        <td class="disclaimers" lang="en"><small>We take no responsibility of usernames or links you
-                                claim is yours. We do no verification neither.</small></td>
-                        <td class="disclaimers" lang="fr"><small>Nous déclinons toute responsabilité quant aux noms
-                                d'utilisateur ou aux liens que vous prétendez être les vôtres. Nous ne faisons aucune
-                                vérification non plus. </small></td>
-                        <td class="disclaimers" lang="ar" dir="rtl"><small>نحن لا نتحمل أي مسؤولية عن أسماء المستخدمين
-                                أو الروابط التي تدعي أنها ملكك. نحن لا نقوم بالتحقق كذلك</small></td>
+                        <td class="disclaimers" lang="en">
+                            <small>We take no responsibility of usernames or links you
+                            claim is yours. We do no verification neither.</small>
+                        </td>
+                        <td class="disclaimers" lang="fr">
+                            <small>Nous déclinons toute responsabilité quant aux noms
+                            d'utilisateur ou aux liens que vous prétendez être les vôtres. Nous ne faisons aucune
+                            vérification non plus. </small>
+                        </td>
+                        <td class="disclaimers" lang="ar" dir="rtl">
+                            <small>نحن لا نتحمل أي مسؤولية عن أسماء المستخدمين
+                            أو الروابط التي تدعي أنها ملكك. نحن لا نقوم بالتحقق كذلك</small>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </details>
+
         <hr>
 
         <h3 lang="en">Fill in your Social Card</h3>
@@ -110,38 +146,32 @@
         <p lang="en"><small> All are optional except "alias" </small></p>
         <p lang="fr"><small> Tous sont facultatifs sauf "le surnom" </small></p>
         <p lang="ar" dir="rtl"><small> كلها اختيارية باستثناء "الاسم المستعار" </small></p>
+
         <section class="contact-form">
             <div class="input-icons">
                 <form action="#" class="form1" name="form1">
                     <i class="fa fa-user icon"></i>
-                    <input class="input-field" value="my-alias" name="user" type="text" pattern=".{6,30}" style=""
-                        title="6 to 20 characters">
+                    <input class="input-field" value="my-alias" name="user" type="text" pattern=".{6,30}" title="6 to 20 characters">
                     <i class="fa fa-instagram icon"></i>
-                    <input class="input-field" value="sinsta" name="instagram" type="text" pattern=".{6,30}|^$"
-                        style="background-color: #c32aa3;" title="6 to 20 characters">
+                    <input class="input-field" value="sinsta" name="instagram" type="text" pattern=".{6,30}|^$" style="background-color: #c32aa3;" title="6 to 20 characters">
                     <i class="fa fa-youtube icon"></i>
-                    <input class="input-field" value="utoob" name="youtube" type="text" pattern=".{6,30}|^$"
-                        style="background-color: #d71e18;" title="6 to 20 characters">
+                    <input class="input-field" value="utoob" name="youtube" type="text" pattern=".{6,30}|^$" style="background-color: #d71e18;" title="6 to 20 characters">
                     <i class="fa fa-facebook icon"></i>
-                    <input class="input-field" value="wtf-acebook" name="facebook" type="text" pattern=".{6,30}|^$"
-                        style="background-color: #1877f2;" title="6 to 20 characters">
+                    <input class="input-field" value="wtf-acebook" name="facebook" type="text" pattern=".{6,30}|^$" style="background-color: #1877f2;" title="6 to 20 characters">
                     <i class="fa fa-twitter icon"></i>
-                    <input class="input-field" value="twatter" name="twitter" type="text" pattern=".{6,30}|^$"
-                        style="background-color: #1da1f2;" title="6 to 20 characters">
+                    <input class="input-field" value="twatter" name="twitter" type="text" pattern=".{6,30}|^$" style="background-color: #1da1f2;" title="6 to 20 characters">
                     <i class="fa fa-snapchat icon"></i>
-                    <input class="input-field" value="snatchchat" name="snapchat" type="text" pattern=".{6,30}|^$"
-                        style="background-color: #fffc00;" title="6 to 20 characters">
+                    <input class="input-field" value="snatchchat" name="snapchat" type="text" pattern=".{6,30}|^$" style="background-color: #fffc00;" title="6 to 20 characters">
                     <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" value="gemail" name="envelope" type="email" pattern=".{6,30}|^$" style=""
-                        title="non conforming email: __@__.__">
+                    <input class="input-field" value="gemail" name="envelope" type="email" pattern=".{6,30}|^$" title="non conforming email: __@__.__">
                     <i class="fa fa-phone icon"></i>
-                    <input class="input-field" value="000-Bananaphone" name="phone" type="text" pattern="\d{10}|^$"
-                        style="" title="non conforming phone number: 10 digits long">
+                    <input class="input-field" value="000-Bananaphone" name="phone" type="text" pattern="\d{10}|^$" title="non conforming phone number: 10 digits long">
                     <br>
                     <button type="submit" name="submit" id="submit">Get QR code</button>
                 </form>
             </div>
         </section>
+
         <div class="progress-container">
             <div class="progress"></div>
             <div class="error"></div>
@@ -151,12 +181,16 @@
         <h3 lang="en">Here you get your QR code and link.</h3>
         <h3 lang="fr">Ici, vous obtenez votre code QR et votre lien.</h3>
         <h3 lang="ar" dir="rtl">"هنا تتحصل على "رمز الاستجابة السريعة" الخاص بك وكذلك "الرابط.</h3>
-        <p lang="en"><small> Just share it with friends! On phones, you can <i>long press</i> on it then share. </small>
+        <p lang="en">
+            <small> Just share it with friends! On phones, you can <i>long press</i> on it then share.</small>
         </p>
-        <p lang="fr"><small> Partagez-le simplement avec vos amis! Sur les téléphones, vous pouvez <i> appuyer
-                    longuement </i> dessus puis partager. </small></p>
-        <p lang="ar" dir="rtl"><small> فقط شاركها مع الأصدقاء! على الهواتف ، يمكنك <i> الضغط لفترة طويلة </i> عليه ثم
-                المشاركة. </small></p>
+        <p lang="fr">
+            <small> Partagez-le simplement avec vos amis! Sur les téléphones, vous pouvez <i>appuyer longuement</i> 
+                dessus puis partager. </small>
+        </p>
+        <p lang="ar" dir="rtl"><small> فقط شاركها مع الأصدقاء! على الهواتف ، يمكنك <i>الضغط لفترة طويلة</i> عليه ثم
+                المشاركة. </small>
+        </p>
         <br>
         <div id="qrcode"></div>
         <p lang="en"><small> Or share the generated link </small></p>
@@ -165,11 +199,10 @@
         <div id="link"></div>
         <br>
         <hr>
-        <H3 lang="en"> Help spread "so-c.me" in your circles 🙂 </H3>
-        <H3 lang="fr"> Aidez à diffuser "so-c.me" dans vos cercles 🙂 </H3>
-        <H3 lang="ar" dir="rtl"> ساعد في نشر "so-c.me" في دوائرك🙂 </H3>
-        <div class="share-btn" data-url="https://so-c.me" data-title="Make your social card now!"
-            data-desc="Add your Facebook, Instagram, Twitter, Snapchat, ... All in one card.">
+        <h3 lang="en"> Help spread "so-c.me" in your circles 🙂 </h3>
+        <h3 lang="fr"> Aidez à diffuser "so-c.me" dans vos cercles 🙂 </h3>
+        <h3 lang="ar" dir="rtl"> ساعد في نشر "so-c.me" في دوائرك🙂 </h3>
+        <div class="share-btn" data-url="https://so-c.me" data-title="Make your social card now!" data-desc="Add your Facebook, Instagram, Twitter, Snapchat, ... All in one card.">
             <a class="btn-vk" data-id="vk"><i class="fa fa-vk"></i> VK</a>
             <a class="btn-facebook" data-id="fb"><i class="fa fa-facebook"></i> Facebook</a>
             <a class="btn-twitter" data-id="tw"><i class="fa fa-twitter"></i> Twitter</a>
@@ -180,17 +213,21 @@
         </div>
     </main>
 
+    <!--FOOTER-->
     <footer>
         <span lang="en">If you like my work 💪 You can help me stay motivated 🍓 : </span>
         <span lang="fr">Si vous aimez mon travail 💪 Vous pouvez m'aider à rester motivé 🍓 : </span>
         <span lang="ar" dir="rtl">إذا أعجبك عملي 💪 يمكنك مساعدتي في البقاء متحمسًا 🍓: </span>
-        <a href='https://www.paypal.com/donate?hosted_button_id=LF4ZVKCQ6GWWW'>Paypal</a>
-        | <a href='mailto:contact@so-c.me'><span lang="en">Email me</span><span lang="fr">Email</span><span lang="ar"
-                dir="rtl">بريد إلكتروني</span></a>
+        <a href='https://www.paypal.com/donate?hosted_button_id=LF4ZVKCQ6GWWW'>Paypal</a> | 
+        <a href='mailto:contact@so-c.me'>
+            <span lang="en">Email me</span>
+            <span lang="fr">Email</span><span lang="ar" dir="rtl">بريد إلكتروني</span>
+        </a>
         <!-- | <a href='https://github.com/bacloud14/so-cards'>Contribute</a> -->
     </footer>
 
 </body>
+
 <script type="text/javascript" src="main.js"></script>
 <!-- <script type="text/javascript" src="peerjs.min.js"></script>
 <script>
@@ -272,5 +309,4 @@
         initialize();
     })();
 </script> -->
-
 </html>

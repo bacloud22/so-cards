@@ -36,6 +36,7 @@ function codify(formJSON) {
             break;
     }
 }
+
 var formData
 var limit = 181;
 // Manipulate dom on key strokes
@@ -47,12 +48,14 @@ function handleFormKeyStrokes(event) {
     setTimeout(() => changeProgress(percentage), 1000);
     console.log(encodedString.length);
 }
+
 // Manipulate dom on form submit
 function handleFormSubmit(event) {
     event.preventDefault();
     formData = new FormData(document.querySelector('.form1'));
     differForConn()
 }
+
 // Attach handleFormKeyStrokes
 const form = document.querySelector('.contact-form');
 form.addEventListener('keyup', handleFormKeyStrokes);
@@ -161,7 +164,4 @@ var mcastUrl;
 //         await subscribe();
 //     }
 // }
-
-
-
 // receive();
