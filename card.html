@@ -2,26 +2,30 @@
 <html>
 
 <head>
+
+    <!--Meta Tags-->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://0.peerjs.com wss://0.peerjs.com https://demo.httprelay.io; 
             script-src 'self' 'unsafe-inline' https://unpkg.com https://ajax.googleapis.com; 
             object-src 'self'; 
             img-src 'self' data: https://img.icons8.com https://cdnjs.cloudflare.com; 
             child-src 'none';">
-
-
     <meta charset='utf-8'>
     <meta name="description" content="Share your social contacts in one card. We do not collect any data whatseoever.">
     <meta name="keywords" content="social, media, contacts, snapchat, whatsapp, twitter, facebook">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--Links-->
     <link rel="icon" type="image/png" href="favicon.png" />
-    <title>Social cards on so-c.me</title>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" type='text/css' href="water.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Social cards on so-c.me</title>
+
+    <!--JS-->
     <script type="text/javascript" src="qrcode.min.js" async></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -34,12 +38,15 @@
         <option value="fr">Français</option>
         <option value="ar">عربية</option>
     </select>
+
+    <!--HEADER-->
     <header>
         <h1 lang="en">Social cards on "so-c.me"</h1>
         <h1 lang="fr">Cartes des médias sociaux sur "so-c.me"</h1>
         <h1 lang="ar" dir="rtl">بطاقات التواصل الاجتماعي</h1>
     </header>
 
+    <!--BODY-->
     <main>
         <details>
             <summary><span lang="en">Some details can't hurt!</span><span lang="fr">Certains détails ne font pas de
@@ -175,6 +182,7 @@
         </div>
     </main>
 
+    <!--FOOTER-->
     <footer>
         <span lang="en">If you like my work 💪 You can help me stay motivated 🍓 : </span>
         <span lang="fr">Si vous aimez mon travail 💪 Vous pouvez m'aider à rester motivé 🍓 : </span>
@@ -185,6 +193,8 @@
         </a>
         <!-- | <a href='https://github.com/bacloud14/so-cards'>Contribute</a> -->
     </footer>
+
+    <!--JS-->
     <script type="text/javascript" src="card.js"></script>
     <!-- <script type="text/javascript" src="peerjs.min.js"></script>
     <script>
@@ -277,5 +287,4 @@
         })();
     </script> -->
 </body>
-
 </html>
